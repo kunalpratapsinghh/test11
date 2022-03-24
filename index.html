@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select name="" id="lst">
+        <option value="India">India</option>
+        <option value="United">United States of America</option>
+        <option value="China">China</option>
+        <option value="Nepal">Nepal</option>
+        <option value="Australia">Australia</option>
+        <option value="France">France</option>
+        <option value="Germany">Germany</option>
+        <option value="South">South Africa</option>
+        <option value="Nigeria">Nigeria</option>
+        <option value="Mexico">Mexico</option>
+        <option value="Argentina">Argentina</option>
+        <option value="Brazil">Brazil</option>
+        <option value="Canada">Canada</option>
+        <option value="Spor">Singapore</option>
+        <option value="Sweden">Sweden</option>
+    </select>
+    <button id="res">Continent</button>
+    <p id="dis">Output</p>
+</body>
+</html>
+<script>
+    document.querySelector("#res").addEventListener("click",Continent)
+    function Continent()
+    {
+        var a=document.querySelector("#lst").value;
+        if(a=="India"||a=="India"||a=="China"||a=="Nepal"||a=="Spor")
+        {
+            document.querySelector("#dis").innerHTML=null;
+            console.log( document.querySelector("#dis").innerHTML="Asia")
+        }
+        if(a=="Australia")
+        {
+            document.querySelector("#dis").innerHTML=null;
+            console.log( document.querySelector("#dis").innerHTML="Australia")
+        }
+        if(a=="France"||a=="Germany"||a=="Sweden")
+        {
+            document.querySelector("#dis").innerHTML=null;
+            console.log( document.querySelector("#dis").innerHTML="Europe")
+        }
+        if(a=="South"||a=="Nigeria")
+        {
+            document.querySelector("#dis").innerHTML=null;
+            console.log( document.querySelector("#dis").innerHTML="Africa")
+        }
+        if(a=="Mexico"||a=="Canada"||a=="United")
+        {
+            document.querySelector("#dis").innerHTML=null;
+            console.log( document.querySelector("#dis").innerHTML="North America")
+        }
+        if(a=="Argentina"||a=="Brazil")
+        {
+            document.querySelector("#dis").innerHTML=null;
+            console.log( document.querySelector("#dis").innerHTML="South America")
+        }
+        
+    }
+    
+</script>
